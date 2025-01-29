@@ -5,7 +5,6 @@
 
 #define PASSWORD_LENGTH 12
 
-// Function prototypes
 void generateStrongPassword(int length);
 char getRandomCharacter();
 
@@ -29,20 +28,18 @@ int main(void) {
     return 0;
 }
 
-// Function to generate a strong password
 void generateStrongPassword(int length) {
-    srand(time(NULL)); // Seed random number generator
+    srand(time(NULL));
     char password[length + 1];
 
     for (int i = 0; i < length; i++) {
         password[i] = getRandomCharacter();
     }
-    password[length] = '\0'; // Null-terminate string
+    password[length] = '\0';
 
     printf("Generated Strong Password: %s\n", password);
 }
 
-// Function to get a random character from a strong character set
 char getRandomCharacter() {
     const char charset[] = "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789!@#$%^&*()-_=+";
     return charset[rand() % (sizeof(charset) - 1)];
