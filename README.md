@@ -8,7 +8,7 @@ This program generates strong, randomized passwords based on user-specified leng
 - **Input Validation**: Ensures valid input within the allowed length range.
 
 ## Example Usage
-'''
+```
 Enter desired password length (minimum 8, max 32): 12
 Generated Strong Password: Xz$8v!Yp@k3L
 
@@ -17,4 +17,4 @@ Enter desired password length (minimum 8, max 32): 16
 Generated Strong Password: a9&Kz@TpLq1#Xy$
 
 Do you want to generate another password? (y/n): n
-'''
+```
